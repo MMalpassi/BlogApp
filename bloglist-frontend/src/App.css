@@ -1,0 +1,81 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+.layout {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -2;
+}
+
+.app-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80px;
+}
+
+.footer {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-custom {
+  background-color: #94b7d1;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-custom a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar-custom button {
+  margin-left: 1rem;
+}
+
+.create-blog-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blogs-section {
+  margin-top: 2rem;
+}
