@@ -10,6 +10,14 @@
 A blog application with a **React** frontend and an **Express.js** backend connected to **MongoDB** via **Mongoose**.  
 It allows users to register, log in, and publish personal blogs.
 
+A few images of the app:
+<p align="center">
+  <img src="assets/login.png" alt="Login Page" width="600"/>
+  <img src="assets/home.png" alt="Home Page" width="600"/>
+  <img src="assets/blog.png" alt="Blog Page" width="600"/>
+</p>
+
+
 ---
 
 ### 🧩 Prerequisites

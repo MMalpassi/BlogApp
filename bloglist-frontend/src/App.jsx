@@ -173,7 +173,7 @@ const App = () => {
           <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow-sm mt-3">
               <div className="container-fluid">
-                <span className="navbar-brand">Quill-App</span>
+                <span className="navbar-brand">Reblogger-App</span>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
