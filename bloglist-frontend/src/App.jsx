@@ -171,20 +171,34 @@ const App = () => {
           <LoginPage submitLogin={handleLogin} />
         ) : (
           <>
-            <nav className="navbar-custom">
-              <span className="me-3">
-                <Link to="/">Blogs</Link>
-              </span>
-              <span className="me-3">
-                <Link to="/users">Users</Link>
-              </span>
-              <span className="me-3">{user.name} logged-in</span>
-              <button
-                className="btn btn-outline-primary btn-sm"
-                onClick={handleLogout}
-              >
-                Logout
-              </button>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary rounded-3 shadow-sm mt-3">
+              <div className="container-fluid">
+                <span className="navbar-brand">Quill-App</span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Blogs
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/users">
+                        Users
+                      </Link>
+                    </li>
+                  </ul>
+                  <span className="me-3">{user.name} logged-in</span>
+                  <button
+                    className="btn btn-outline-primary btn-sm"
+                    onClick={handleLogout}
+                  >
+                    Logout
+                  </button>
+                </div>
+              </div>
             </nav>
 
             <Routes>
@@ -193,7 +207,7 @@ const App = () => {
                 element={
                   <>
                     <div className="create-blog-section">
-                      <h2>Create a new blog</h2>
+                      <h2> <mark>Add</mark> a new blog</h2>
                       <Togglable buttonLabel="New blog" ref={blogFormRef}>
                         <CreateBlog createBlog={addBlog} />
                       </Togglable>

@@ -79,3 +79,10 @@ h1, h2, h3 {
 .blogs-section {
   margin-top: 2rem;
 }
+
+mark {
+  background-color: #eee16a;
+  color: #000;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

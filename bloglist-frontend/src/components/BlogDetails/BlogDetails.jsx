@@ -22,7 +22,10 @@ const BlogDetails = ({ handleLike, handleRemove }) => {
             <Card.Subtitle className="mb-2 text-muted mt-2">
               Author: {blogMatched.author}
             </Card.Subtitle>
-            <Card.Text className="mb-2 text-muted mt-2">
+            <Card.Text className="mb-2 text-muted mt-2"
+              style={{ cursor: 'pointer', color: 'blue', textDecoration: 'underline' }}
+              onClick={() => window.open(blogMatched.url, '_blank')}
+            >
               <strong>URL:</strong> {blogMatched.url}
             </Card.Text>
             <Card.Text className="mb-2 text-muted mt-2">

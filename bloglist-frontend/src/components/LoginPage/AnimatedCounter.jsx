@@ -19,7 +19,7 @@ export default function HTMLContent() {
       transition={{ duration: 1 }}
     >
       ✍️ Join +<motion.span className="highlight">{rounded}</motion.span> writers already using{" "}
-      <strong>Quill</strong>
+      <strong>Reblogger</strong>
     </motion.p>
 }
 

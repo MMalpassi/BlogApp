@@ -16,34 +16,35 @@ const LoginForm = ({ submitLogin }) => {
   }
 
   return (
-    <div>
-      <h2 data-testid="Login">Login!</h2>
-      <Form onSubmit={newLogin}>
-        <Form.Group className="mb-3" controlId="username">
-          <Form.Label>Username:</Form.Label>
-          <Form.Control
-            type="text"
-            value={newUsername}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="Enter username"
-          />
-        </Form.Group>
+    <Form onSubmit={newLogin} className="text-start">
+      <Form.Group className="mb-3" controlId="username">
+        <Form.Label className="fw-semibold">Username</Form.Label>
+        <Form.Control
+          type="text"
+          value={newUsername}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Enter username"
+          className="shadow-sm"
+        />
+      </Form.Group>
 
-        <Form.Group className="mb-3" controlId="password">
-          <Form.Label>Password:</Form.Label>
-          <Form.Control
-            type="password"
-            value={newPassword}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter password"
-          />
-        </Form.Group>
+      <Form.Group className="mb-3" controlId="password">
+        <Form.Label className="fw-semibold">Password</Form.Label>
+        <Form.Control
+          type="password"
+          value={newPassword}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Enter password"
+          className="shadow-sm"
+        />
+      </Form.Group>
 
-        <Button variant="primary" type="submit">
+      <div className="d-grid">
+        <Button variant="primary" size="lg" type="submit">
           Login
         </Button>
-      </Form>
-    </div>
+      </div>
+    </Form>
   )
 }
 

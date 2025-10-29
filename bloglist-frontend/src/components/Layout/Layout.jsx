@@ -18,21 +18,19 @@ function Layout({ user, children }) {
 
   return (
     <div className="layout">
-      {/* Fondo principal */}
+
       <div
         className="background"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 
-      {/* Contenido de la app */}
       <div className="app-content">{children}</div>
 
-      {/* Footer con fondo propio */}
       <footer
         className="footer"
         style={{ backgroundImage: `url(${bgFooter})` }}
       >
-        <p>© 2025 - My Blog App</p>
+        <p>© 2025 - Reblogger App</p>
       </footer>
     </div>
   );

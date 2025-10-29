@@ -51,7 +51,7 @@ const CreateBlog = ({ createBlog }) => {
           />
         </Form.Group>
 
-        <Button variant="outline-primary" size="sm" type="submit">
+        <Button className="btn btn-primary" size="sm" type="submit">
           Create
         </Button>
       </Form>
